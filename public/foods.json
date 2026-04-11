@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "foodName": "Chicken Biryani",
+    "foodCategory": "Main Course",
+    "price": 250,
+    "rating": 4.5,
+    "foodDescription": "Aromatic and flavorful chicken biryani cooked with basmati rice, tender chicken pieces, and a perfect blend of traditional spices.",
+    "image": "https://i.ibb.co.com/DfQf0CsH/biriyani.jpg"
+  },
+  {
+    "id": 2,
+    "foodName": "Beef Burger",
+    "foodCategory": "Fast Food",
+    "price": 180,
+    "rating": 4.2,
+    "foodDescription": "Juicy grilled beef patty layered with fresh lettuce, tomato, cheese, and special sauce inside a soft toasted bun. Perfectly balanced taste of savory beef and fresh vegetables in every bite.",
+    "image": "https://i.ibb.co.com/hJWKLsfQ/beef-Burgur.jpg"
+  },
+  {
+    "id": 3,
+    "foodName": "Pizza Margherita",
+    "foodCategory": "Fast Food",
+    "price": 300,
+    "rating": 4.6,
+    "foodDescription": "Classic Italian pizza topped with rich tomato sauce, melted mozzarella cheese, and fresh basil leaves. Baked to perfection with a crispy crust and soft cheesy center.",
+    "image": "https://i.ibb.co.com/7tyNtLXy/pizza.jpg"
+  },
+  {
+    "id": 4,
+    "foodName": "Fried Chicken",
+    "foodCategory": "Snacks",
+    "price": 220,
+    "rating": 4.4,
+    "foodDescription": "Crispy golden fried chicken with a crunchy outer layer and juicy tender meat inside. Marinated with special spices to deliver a rich and satisfying flavor in every bite.",
+    "image": "https://i.ibb.co.com/G4qPq8XC/friedchicken.jpg"
+  },
+  {
+    "id": 5,
+    "foodName": "Pasta Alfredo",
+    "foodCategory": "Italian",
+    "price": 270,
+    "rating": 4.3,
+    "foodDescription": "Creamy Alfredo pasta made with fresh cream, garlic butter sauce, and tender chicken pieces. A smooth, rich, and comforting dish perfect for pasta lovers.",
+    "image": "https://i.ibb.co.com/ksRxRVDs/pasta.jpg"
+  },
+  {
+    "id": 6,
+    "foodName": "Grilled Fish",
+    "foodCategory": "Seafood",
+    "price": 350,
+    "rating": 4.5,
+    "foodDescription": "Freshly grilled fish seasoned with herbs, lemon, and light spices. Cooked to perfection with a smoky flavor and served with fresh salad for a healthy meal option.",
+    "image": "https://i.ibb.co.com/v4K4L2Ht/fish.jpg"
+  },
+  {
+    "id": 7,
+    "foodName": "Chicken Shawarma",
+    "foodCategory": "Middle Eastern",
+    "price": 150,
+    "rating": 4.2,
+    "foodDescription": "Soft wrap filled with juicy chicken slices, fresh vegetables, and creamy garlic sauce. A popular street food known for its rich and spicy Middle Eastern flavors.",
+    "image": "https://i.ibb.co.com/XrZ9SBbP/swarma.jpg"
+  },
+  {
+    "id": 8,
+    "foodName": "Veg Sandwich",
+    "foodCategory": "Snacks",
+    "price": 90,
+    "rating": 4.0,
+    "foodDescription": "Fresh vegetable sandwich loaded with lettuce, cucumber, tomato, and cheese. Light, healthy, and perfect for a quick snack or breakfast option.",
+    "image": "https://i.ibb.co.com/XZFcJMp5/sandwitch.jpg"
+  },
+  {
+    "id": 9,
+    "foodName": "Mango Juice",
+    "foodCategory": "Beverage",
+    "price": 80,
+    "rating": 4.1,
+    "foodDescription": "Refreshing mango juice made from fresh ripe mangoes. Naturally sweet, chilled, and perfect to cool down on hot summer days.",
+    "image": "https://i.ibb.co.com/BHwV77K1/mango.jpg"
+  },
+  {
+    "id": 10,
+    "foodName": "Chocolate Cake",
+    "foodCategory": "Dessert",
+    "price": 200,
+    "rating": 4.7,
+    "foodDescription": "Rich and moist chocolate cake layered with creamy chocolate frosting. A perfect dessert for chocolate lovers with a soft and indulgent texture.",
+    "image": "https://i.ibb.co.com/cSLQW8YX/cake.jpg"
+  },
+  {
+    "id": 11,
+    "foodName": "Beef Kebab",
+    "foodCategory": "Grill",
+    "price": 260,
+    "rating": 4.4,
+    "foodDescription": "Spicy grilled beef kebabs cooked over charcoal for a smoky and juicy flavor. Served with chutney and salad for a complete traditional taste.",
+    "image": "https://i.ibb.co.com/DPb02NmZ/kebab.jpg"
+  },
+  {
+    "id": 12,
+    "foodName": "Chicken Nuggets",
+    "foodCategory": "Fast Food",
+    "price": 140,
+    "rating": 4.2,
+    "foodDescription": "Crispy chicken nuggets made from tender chicken pieces coated in a crunchy golden crust. Perfect snack for kids and adults alike.",
+    "image": "https://i.ibb.co.com/V4NBWnf/nuggets.jpg"
+  },
+  {
+    "id": 13,
+    "foodName": "Fried Rice",
+    "foodCategory": "Chinese",
+    "price": 180,
+    "rating": 4.3,
+    "foodDescription": "Delicious fried rice cooked with vegetables, eggs, and soy sauce. Lightly spiced and full of flavor, perfect as a quick meal option.",
+    "image": "https://i.ibb.co.com/bRrpb163/fried-rice.jpg"
+  },
+  {
+    "id": 14,
+    "foodName": "Hot Dog",
+    "foodCategory": "Fast Food",
+    "price": 130,
+    "rating": 4.0,
+    "foodDescription": "Soft bun filled with juicy sausage, ketchup, mustard, and fresh toppings. A simple yet tasty street-style snack loved by many.",
+    "image": "https://i.ibb.co.com/mCYSC7d5/hot-Dog.jpg"
+  },
+  {
+    "id": 15,
+    "foodName": "Ice Cream",
+    "foodCategory": "Dessert",
+    "price": 100,
+    "rating": 4.6,
+    "foodDescription": "Creamy and cold ice cream available in different flavors. Smooth texture with a sweet taste that melts in your mouth instantly.",
+    "image": "https://i.ibb.co.com/VcDqPC7K/icecream.jpg"
+  },
+  {
+    "id": 16,
+    "foodName": "Chicken Curry",
+    "foodCategory": "Main Course",
+    "price": 240,
+    "rating": 4.5,
+    "foodDescription": "Traditional chicken curry cooked with rich spices, onions, and tomatoes. A flavorful dish best enjoyed with rice or bread.",
+    "image": "https://i.ibb.co.com/yF2cVRDc/curry.jpg"
+  },
+  {
+    "id": 17,
+    "foodName": "Vegetable Salad",
+    "foodCategory": "Healthy",
+    "price": 120,
+    "rating": 4.1,
+    "foodDescription": "Fresh mixed vegetable salad with lettuce, cucumber, carrot, and light dressing. A healthy and refreshing meal choice.",
+    "image": "https://i.ibb.co.com/S7vZTkWy/veg-Salad.jpg"
+  },
+  {
+    "id": 18,
+    "foodName": "Doner Kebab",
+    "foodCategory": "Middle Eastern",
+    "price": 200,
+    "rating": 4.3,
+    "foodDescription": "Layered meat slices cooked slowly on a rotating spit, served in wrap or plate with sauces and vegetables. Rich and flavorful street food.",
+    "image": "https://i.ibb.co.com/9mWFtX8f/doner.jpg"
+  },
+  {
+    "id": 19,
+    "foodName": "Spicy Wings",
+    "foodCategory": "Snacks",
+    "price": 210,
+    "rating": 4.4,
+    "foodDescription": "Hot and spicy chicken wings coated with special seasoning and fried to crispy perfection. Perfect for snack lovers who enjoy heat and flavor.",
+    "image": "https://i.ibb.co.com/DfZpBH1q/wings.jpg"
+  },
+  {
+    "id": 20,
+    "foodName": "Shahi Halim",
+    "foodCategory": "Traditional",
+    "price": 180,
+    "rating": 4.5,
+    "foodDescription": "Rich and thick traditional halim cooked slowly with wheat, lentils, and meat. Full of flavor and energy, especially popular during special occasions.",
+    "image": "https://i.ibb.co.com/pt15mWS/halim.jpg"
+  }
+]
