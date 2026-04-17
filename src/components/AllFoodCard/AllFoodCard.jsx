@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 
-const AllFoodCard = ({ food }) => {
-    const { foodName, price, rating, foodDescription, image } = food;
+const AllFoodCard = ({ food, handleOrder }) => {
+    const { id, foodName, price, rating, foodDescription, image } = food;
 
     return (
         <div className="card bg-mist-500 w-70 h-100 mx-auto md:mx-0 my-5 shadow-sm transition delay-120 
@@ -21,9 +21,9 @@ const AllFoodCard = ({ food }) => {
                     <div className="badge badge-soft badge-info"><FaStar></FaStar> {rating}</div>
                 </div>
             </div>
-                <div className="relative justify-end mt-2 mr-4">
-                    <button className="absolute top-10 right-0 btn btn-secondary">Order Food</button>
-                </div>
+            <div className="relative justify-end mt-2 mr-4">
+                <button onClick={() => handleOrder(id)} className="absolute top-10 right-0 btn btn-secondary">Order Food</button>
+            </div>
         </div>
     );
 };

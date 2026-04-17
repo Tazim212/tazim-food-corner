@@ -1,18 +1,30 @@
-import React from 'react';
+import React, { use } from 'react';
 import { Link, NavLink } from 'react-router';
 import logo from "../../assets/logo.png"
+import { AuthContext } from '../../Layout/AuthContext/AuthContext';
 
 const Navbar = () => {
+
+    const { user, signedOut } = use(AuthContext)
 
     const list = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/menulist">Menu List</NavLink></li>
-        <li><NavLink to="/orderedlist">Ordered Food</NavLink></li>
+        {user && <>
+            <li><NavLink to="/orderedlist">Ordered Food</NavLink></li>
+        </>}
+            <li><NavLink to="/dashboard">Dashboard</NavLink></li>
         <li><NavLink to="/about">About Us</NavLink></li>
-        </>
-
+    </>
+    const handleSignOut = () => {
+        signedOut()
+            .then()
+            .catch(err => {
+                console.log(err)
+            })
+    }
     return (
-        <div className="navbar bg-linear-to-l from-blue-400 to-indigo-300 text-gray-900 shadow-sm">
+        <div className="navbar bg-linear-to-l from-blue-400 to-indigo-300 text-gray-900 shadow-sm px-0 md:px-7">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,7 +34,7 @@ const Navbar = () => {
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-linear-to-l from-emerald-400 to-indigo-300 text-gray-900
                         rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            {list}
+                        {list}
                     </ul>
                 </div>
                 <img src={logo} className='w-14 h-14 rounded-full' alt="" />
@@ -33,7 +45,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link><button className='btn bnt-soft btn-success'>Log In</button></Link>
+                {user ? <button onClick={handleSignOut} className='btn btn-success'>Log Out</button>
+                    :
+                    <Link to="/login"><button className='btn bnt-soft btn-success'>Log In</button></Link>}
             </div>
         </div>
     );

@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 
-const FoodCard = ({ food }) => {
+const FoodCard = ({ food, handleOrder}) => {
     // console.log(food)
-    const { foodName, price, rating, foodDescription, image } = food;
+    const { id, foodName, price, rating, foodDescription, image } = food;
 
     return (
         <div className="card image-full h-90 max-w-72 md:max-w-85 mx-15 md:mx-6
@@ -24,7 +24,7 @@ const FoodCard = ({ food }) => {
                 </div>
             </div>
                 <div className="absolute top-73 left-12 md:left-20">
-                    <button className="btn btn-secondary px-15">Order Food</button>
+                    <button onClick={() => handleOrder(id)} className="btn btn-secondary px-15">Order Food</button>
                 </div>
         </div>
     );
