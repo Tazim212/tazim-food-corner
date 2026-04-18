@@ -11,9 +11,9 @@ const Banner = () => {
                 />
                 <div>
                     <h1 className="text-5xl italic text-center md:text-left"><span className='text-green-300'>Welcome to the</span> <br></br>food world</h1>
-                    <p className="py-6 text-amber-400 text-balance text-center md:text-left">
+                    <p className="py-6 text-amber-900 text-balance text-center md:text-left">
                         Delicious and fresh food delivered to your doorstep. Explore a variety of tasty dishes, 
-                        from traditional favorites to modern flavors — all in one place.
+                        from traditional favorites to modern flavors — all in one place you can order non hesitately.
                     </p>
                     <div className="join ml-4 md:ml-0">
                         <div>

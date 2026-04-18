@@ -28,7 +28,7 @@ const OrderList = () => {
                             <p className='text-lg text-sky-300'>Category: {order.foodCategory}</p>
                             <p>{order.price} Taka</p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Watch</button>
+                                <button className="btn btn-primary">View Details</button>
                             </div>
                         </div>
                     </div>
