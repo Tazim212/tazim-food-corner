@@ -24,7 +24,7 @@ const AllFoods = () => {
                 localStorage.setItem("orderList",JSON.stringify(orderedFood))
             }
             else{
-                alert("food already existed")
+                Swal.fire("Food already existed")
             }
         }
         else {
