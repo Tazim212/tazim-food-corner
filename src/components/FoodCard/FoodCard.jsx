@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
+import { Link } from 'react-router';
 
-const FoodCard = ({ food, handleOrder}) => {
+const FoodCard = ({ food}) => {
     // console.log(food)
-    const { id, foodName, price, rating, foodDescription, image } = food;
+    const { foodName, price, rating, foodDescription, image } = food;
 
     return (
         <div className="card image-full h-90 max-w-72 md:max-w-85 mx-15 md:mx-6
@@ -24,7 +25,7 @@ const FoodCard = ({ food, handleOrder}) => {
                 </div>
             </div>
                 <div className="absolute top-73 left-12 md:left-20">
-                    <button onClick={() => handleOrder(id)} className="btn btn-secondary px-15">Order Food</button>
+                    <Link to="/menulist"><button className="btn btn-secondary px-15">View Details</button></Link>
                 </div>
         </div>
     );

@@ -2,6 +2,7 @@ import React, { use } from 'react';
 import { Link, NavLink } from 'react-router';
 import logo from "../../assets/logo.png"
 import { AuthContext } from '../../Layout/AuthContext/AuthContext';
+import "./nav.css"
 
 const Navbar = () => {
 
@@ -24,7 +25,7 @@ const Navbar = () => {
             })
     }
     return (
-        <div className="navbar bg-linear-to-l from-blue-400 to-indigo-300 text-gray-900 shadow-sm px-0 md:px-7">
+        <nav className="navbar bg-linear-to-l from-blue-400 to-indigo-300 text-gray-900 shadow-sm px-0 md:px-7">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,12 +45,13 @@ const Navbar = () => {
                     {list}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end mr-3 md:mr-0">
+                {user && <p className='text-gray-700 font-semibold pr-2'>{user.email}</p>}
                 {user ? <button onClick={handleSignOut} className='btn btn-success'>Log Out</button>
                     :
                     <Link to="/login"><button className='btn bnt-soft btn-success'>Log In</button></Link>}
             </div>
-        </div>
+        </nav>
     );
 };
 

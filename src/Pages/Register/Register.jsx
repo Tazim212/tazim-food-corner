@@ -1,23 +1,28 @@
 import React, { use } from 'react';
 import { AuthContext } from '../../Layout/AuthContext/AuthContext';
+import { useLocation, useNavigate } from 'react-router';
 
 const Register = () => {
 
     const { createUser } = use(AuthContext);
 
+    const location = useLocation();
+    const navigate = useNavigate()
+    
     const handleRegister = (e) => {
         e.preventDefault()
         const email = e.target.email.value;
         const passeord = e.target.password.value;
-
         // console.log(email, passeord);
         createUser(email, passeord)
-        .then(res =>{
-            console.log(res.user)
-        })
-        .catch(err =>{
-            console.log(err)
-        })
+            .then(res => {
+                console.log(res.user)
+                e.target.reset()
+                navigate(location?.state || "/")
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }
     return (
         <div className="hero bg-base-200 min-h-screen">

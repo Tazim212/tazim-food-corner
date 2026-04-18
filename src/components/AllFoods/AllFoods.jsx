@@ -1,22 +1,35 @@
 import React, { use, useState } from 'react';
 import AllFoodCard from '../AllFoodCard/AllFoodCard';
+import { AuthContext } from '../../Layout/AuthContext/AuthContext';
+import { Link, Navigate, useNavigate } from 'react-router';
+import Swal from 'sweetalert2';
 
 const allFoods = fetch("foods.json").then(res => res.json())
 
 const AllFoods = () => {
     const foods = use(allFoods);
+    const { user } = use(AuthContext)
+
     const [sort, setSort] = useState("")
-    const [ordered, setOrdered] = useState([])
+    const navigate = useNavigate()
+    // const [ordered, setOrdered] = useState([])
 
-    const handleOrder = (id) => {
-        // console.log(id);
-        const orderedFood = foods.find(food => food.id === id);
-        if (orderedFood) {
-            ordered.push(orderedFood)
-            console.log(ordered);
-            setOrdered(ordered)
+    const handleOrder = (food) => {
+        if(user){
+            const orderedFood = JSON.parse(localStorage.getItem("orderList")) || [];
+            const existed = orderedFood.find(item =>item.id === food.id)
+            if(!existed){
+                orderedFood.push(food)
+                // console.log(orderedFood)
+                localStorage.setItem("orderList",JSON.stringify(orderedFood))
+            }
+            else{
+                alert("food already existed")
+            }
         }
-
+        else {
+           return navigate("/login")
+        }
     }
     // console.log(foods);
     if (sort === "lowPrice") {
@@ -30,7 +43,6 @@ const AllFoods = () => {
         <div>
             <h1 className='text-center font-bold text-3xl my-3'>Discover Your Foods</h1>
 
-            <p className='text-white'>{ordered.length}</p>
             <div className='mx-auto md:mx-10 my-3 w-44'>
                 <select defaultValue="Color scheme" onChange={(e) => setSort(e.target.value)} className="select select-accent bg-white text-black">
                     <option >Sort By</option>

@@ -36,7 +36,7 @@ const router = createBrowserRouter(
                     element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
                 },
                 {
-                    path: '/orderlist',
+                    path: '/orderedlist',
                     element: <PrivateRoute><OrderList></OrderList></PrivateRoute>
                 },
             ]
