@@ -7,6 +7,7 @@ import Register from "../../Pages/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Dashboard from "../../Pages/Dashboard/Dashboard";
 import OrderList from "../OrderList/OrderList";
+import About from "../About/About";
 
 const router = createBrowserRouter(
     [
@@ -30,6 +31,10 @@ const router = createBrowserRouter(
                 {
                     path: '/register',
                     Component: Register
+                },
+                {
+                    path: '/about',
+                    Component: About
                 },
                 {
                     path: '/dashboard',

@@ -25,7 +25,7 @@ const Navbar = () => {
             })
     }
     return (
-        <nav className="navbar bg-linear-to-l from-blue-400 to-indigo-300 text-gray-900 shadow-sm px-0 md:px-7">
+        <nav className="navbar bg-linear-to-l from-blue-500 to-mauve-700 text-gray-100 shadow-sm px-0 md:px-7">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,7 +46,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end mr-3 md:mr-0">
-                {user && <p className='text-gray-700 font-semibold pr-2'>{user.email}</p>}
+                {user && <p className='text-red-900 font-semibold pr-2'>{user.email}</p>}
                 {user ? <button onClick={handleSignOut} className='btn btn-success'>Log Out</button>
                     :
                     <Link to="/login"><button className='btn bnt-soft btn-success'>Log In</button></Link>}
