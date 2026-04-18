@@ -10,6 +10,7 @@ const SignIn = () => {
     const { signedUser, googleSigned } = use(AuthContext);
 
     const [show, setShow] = useState(false);
+    const [error, setError] = useState("")
 
     const location = useLocation();
     const navigate = useNavigate()
@@ -19,6 +20,7 @@ const SignIn = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         // console.log(email, password)
+        setError("")
         signedUser(email, password)
             .then(res => {
                 console.log(res.user)
@@ -26,7 +28,8 @@ const SignIn = () => {
                 navigate(location?.state || "/")
             })
             .catch(err => {
-                console.log(err)
+                // console.log(err)
+                setError(err)
             })
     }
 
@@ -38,6 +41,7 @@ const SignIn = () => {
             })
             .catch(err => {
                 console.log(err)
+                setError(err)
             })
     }
     return (
@@ -70,6 +74,7 @@ const SignIn = () => {
                         <path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"></path></g></svg>
                 Login with Google
             </button>
+            <p className='text-red-600 text-md text-center py-2'>{error.message}</p>
         </div>
     );
 };
